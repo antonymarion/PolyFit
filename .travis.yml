@@ -1,0 +1,44 @@
+language: c++
+
+
+branches:
+    only:
+    - master
+    - /^travis-.*/
+
+
+matrix:
+  include:
+    - dist: bionic
+      compiler: g++
+      os: linux
+      sudo: required
+      env:
+         - TRAVIS_DIST_NAME="bionic"
+      compiler: g++
+      os: linux
+      sudo: required
+
+before_install:
+  - sudo apt-get update -y
+  - sudo apt-get install libboost-all-dev -y
+  - sudo apt-get install libfontconfig libdbus-1-3 dbus libx11-6 libx11-xcb1 libxcb1 python3 python3-pip  python3-setuptools -y
+  - sudo apt-get install libxkbcommon-x11-0 -y
+  - sudo apt-get install build-essential -y
+  - sudo apt-get install libfontconfig1 -y
+  - sudo apt-get install mesa-common-dev -y
+  - sudo apt-get install libglu1-mesa-dev -y
+  - sudo apt-get install qtbase5-dev libcgal-dev -y
+
+script:
+  - pwd && mkdir /home/buildPolyFit && cd /home/buildPolyFit 
+  
+  
+after_success:
+# remove command since TRAVIS free machines can't execute compiled program. (missing RAM)
+#   - TODO
+
+
+env:
+  global:
+    secure: 
