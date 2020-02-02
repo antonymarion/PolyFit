@@ -31,7 +31,7 @@ before_install:
   - sudo apt-get install qtbase5-dev libcgal-dev -y
 
 script:
-  - sudo mkdir /home/buildPolyFit && cd /home/buildPolyFit  && cmake /home/travis/build/antonymarion/PolyFit && make
+  - sudo mkdir /home/buildPolyFit && cd /home/buildPolyFit  && sudo cmake /home/travis/build/antonymarion/PolyFit && sudo make
   
   
 after_success:
