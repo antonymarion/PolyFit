@@ -21,7 +21,7 @@ jobs:
          sudo apt-get install libfontconfig1 -y
          sudo apt-get install mesa-common-dev -y
          sudo apt-get install libglu1-mesa-dev -y
-         ./qt-opensource-linux-x64-5.14.1.run
+         ./qt-opensource-linux-x64-5.14.1.run --platform minimal
 #     - name: scip
 #       run: |
     - name: cmake
