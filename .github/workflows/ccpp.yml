@@ -19,6 +19,7 @@ jobs:
          sudo apt-get install libfontconfig1 -y
          sudo apt-get install mesa-common-dev -y
          sudo apt-get install libglu1-mesa-dev -y
+         ldd /usr/lib/qt/plugins/platforms/libqxcb.so
          ./qt-opensource-linux-x64-5.14.1.run
 #     - name: scip
 #       run: |
