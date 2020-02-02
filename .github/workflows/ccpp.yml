@@ -9,11 +9,13 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: qt
+    - name: qt And other dependencies...
       run: |
+         sudo apt-get update -y
+         apt-get install libboost-all-dev -y
+         apt-get install libfontconfig -y
          wget http://download.qt.io/official_releases/qt/5.14/5.14.1/qt-opensource-linux-x64-5.14.1.run
          chmod +x qt-opensource-linux-x64-5.14.1.run
-         sudo apt-get update -y
          sudo apt-get install libxkbcommon-x11-0 -y
          sudo apt-get install build-essential -y
          sudo apt-get install libfontconfig1 -y
