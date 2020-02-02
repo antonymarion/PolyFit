@@ -19,18 +19,9 @@ jobs:
          sudo apt-get install libfontconfig1 -y
          sudo apt-get install mesa-common-dev -y
          sudo apt-get install libglu1-mesa-dev -y
-         sudo apt-get install qtbase5-dev -y
-#         sudo pip3 install cuteci && cuteci --installer http://download.qt.io/official_releases/qt/5.12/5.12.2/qt-opensource-linux-x64-5.12.2.run install --destdir /opt/Qt --packages qt.tools
-#         wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
-#         chmod +x qt-unified-linux-x64-online.run
-#         sudo ./qt-unified-linux-x64-online.run --platform minimal
-#     - name: scip
-#       run: |
-    - name: cmake
-      run: mkdir build && cd build && cmake ..
-    - name: make
-      run: make
-#     - name: make check
-#       run: make check
-#     - name: make distcheck
-#       run: make distcheck
+         sudo apt-get install qtbase5-dev libcgal-dev -y
+# COMMENTED since TIMEOUT in github workflows ... 
+#     - name: cmake
+#       run: mkdir build && cd build && cmake ..
+#     - name: make
+#       run: make
