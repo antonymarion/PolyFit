@@ -28,7 +28,7 @@ before_install:
   - sudo apt-get install libfontconfig1 -y
   - sudo apt-get install mesa-common-dev -y
   - sudo apt-get install libglu1-mesa-dev -y
-  - sudo apt-get install qtbase5-dev libcgal-dev -y
+  - sudo apt-get install qtbase5-dev qt5-default libcgal-dev -y
 
 script:
   - sudo mkdir /home/buildPolyFit && cd /home/buildPolyFit  && sudo cmake /home/travis/build/antonymarion/PolyFit && sudo make
