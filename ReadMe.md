@@ -1,6 +1,6 @@
 # Ready to use Docker Image (on Ubuntu 18.04)
 
-https://hub.docker.com/repository/docker/antonymarion/polyfit
+https://hub.docker.com/r/antonymarion/polyfit
 
 # Polygonal surface reconstruction from point clouds
 
