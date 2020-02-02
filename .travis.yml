@@ -18,6 +18,7 @@ matrix:
       compiler: g++
       os: linux
       sudo: required
+      allow_failures: true
 
 before_install:
   - sudo apt-get update -y
