@@ -1,3 +1,7 @@
+# Ready to use Docker Image (on Ubuntu 18.04)
+
+https://hub.docker.com/repository/docker/dockerantoaptea/polyfit_gurobi
+
 # Polygonal surface reconstruction from point clouds
 
 ![](polyfit.png)
