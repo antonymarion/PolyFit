@@ -1,5 +1,11 @@
 # optimization time < 1s using Gurobi
 
+<p align="center">
+   <img width="400" src="https://github.com/antonymarion/PolyFit/raw/master/Annotation 2020-04-05 190837.png">
+</p>
+<p align="center">
+   <img width="400" src="https://github.com/antonymarion/PolyFit/raw/master/Annotation 2020-04-05 190845.png">
+</p>
 
 # Ready to use Docker Image (on Ubuntu 18.04)
 
