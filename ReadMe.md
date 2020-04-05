@@ -1,3 +1,6 @@
+# optimization time < 1s using Gurobi
+
+
 # Ready to use Docker Image (on Ubuntu 18.04)
 
 https://hub.docker.com/r/antonymarion/polyfit
