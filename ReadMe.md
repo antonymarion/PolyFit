@@ -1,4 +1,4 @@
-# optimization time < 1s using Gurobi
+# optimization time < 1s using Gurobi + 24 cores ~3.8GHz
 
 <p align="center">
    <img width="400" src="https://github.com/antonymarion/PolyFit/raw/master/Annotation 2020-04-05 190837.png">
